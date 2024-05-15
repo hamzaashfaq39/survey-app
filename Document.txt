@@ -1,0 +1,28 @@
+This is a straightforward survey application developed in React.js, comprising three main components:
+
+CreateSurvey:
+This component manages the creation of surveys. Initially, the right side of the page displays inputs for the title and description.
+Below these inputs are two buttons: one for creating the survey and the other for resetting the entire survey form.
+On the right side, there is a box where a list of questions will be displayed once added.
+Additionally, there is a button to open a modal where users can add questions to the survey.
+Initially, the create survey button is disabled until a title, description, and at least one question are added.
+In the question modal, users have two options: they can add questions and their options, or they can add questions with an input field for users to write their own answers.
+While there are many potential features to enhance this survey creation form, I've kept it minimal for assessment purposes.
+Upon successfully creating a survey and clicking the button, a toast message will appear indicating the successful creation of the survey, and the user will be navigated to the next screen.
+
+
+SurveyList:
+The SurveyList component displays surveys in a list format, showing their titles.
+By clicking on a survey title, a modal will open displaying all the survey questions and options.
+Users are required to answer all the questions and submit their responses.
+Upon submission, a toast message will appear indicating the response successful submitted, users will be directed to the next screen.
+
+
+History:
+The History screen displays a table of user responses, along with the date and time of submission.
+By clicking "view response," a modal will open allowing users to review all their responses from previous survey submissions.
+
+
+This survey app flow is intentionally kept simple for assessment purposes, although it could be made more efficient and comprehensive.
+
+I have also written test cases for each component, which can be executed by running the command npm test.
